@@ -51,7 +51,7 @@ export default {
       this.postList = data  
     },
     async filter(){
-      const res = await fetch(`https://nocodes.herokuapp.com/api/filterBlog/&text=${this.text}/`)
+      const res = await fetch(`https://nocodes.herokuapp.com/api/filterBlog/${this.text}`)
       const data = await res.json()
       if(this.text){
         this.postList = data
