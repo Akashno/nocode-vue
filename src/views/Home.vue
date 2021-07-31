@@ -46,12 +46,12 @@ export default {
       return moment(date).format("MM-YYYY-DD HH:SS a")
     },
     async fetchPost(){
-      const res = await fetch('https://nocodes.herokuapp.com/api/postList')
+      const res = await fetch('https://nocodes.herokuapp.com/api/postList/')
       const data = await res.json()
       this.postList = data  
     },
     async filter(){
-      const res = await fetch(`https://nocodes.herokuapp.com/api/filterBlog/&text=${this.text}`)
+      const res = await fetch(`https://nocodes.herokuapp.com/api/filterBlog/&text=${this.text}/`)
       const data = await res.json()
       if(this.text){
         this.postList = data
