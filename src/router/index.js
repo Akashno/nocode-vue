@@ -3,6 +3,7 @@ import Home from '../views/Home.vue'
 import About from '../views/About.vue'
 import Blog from '../views/Blog.vue'
 import Resume from '../views/Resume.vue'
+import Illustrations from '../views/Illustrations.vue'
 const routes = [
   {
     path: '/',
@@ -25,7 +26,14 @@ const routes = [
     name:'Blog',
     component:Blog,
     
-  }
+  },
+  {
+    path:"/illustrations",
+    name:'Illustrations',
+    component:Illustrations,
+    
+  },
+
 ]
 
 const router = createRouter({

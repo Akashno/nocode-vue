@@ -15,7 +15,7 @@
     <p class=" mt-3 text-gray-800 text-justify text-sm leading-loose">{{post.description}}</p>
     </div>
     <div class="flex mt-3 md:order-1 ">
-      <img class="w-10 h-10 rounded-full object-cover" src="https://images.unsplash.com/photo-1595152452543-e5fc28ebc2b8?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fG1hbiUyMGZhY2V8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80" alt="">
+      <img class="w-10 h-10 rounded-full object-cover" src="@/assets/akashno.jpg" alt="">
       <div class="ml-2">
         <p class="text-gray-600 text-sm mb-1">{{post.author_name}}</p>
         <p class="text-gray-400 text-xs">{{convertDate(post.date_created)}}</p>
